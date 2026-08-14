@@ -51,7 +51,7 @@
         font-size="28"
         font-weight="800"
         letter-spacing="2">
-    AK_STAR1.SYSTEM
+    ACTIVITY
   </text>
 
   <circle cx="770" cy="51" r="6" fill="#DFFF00" filter="url(#glow)"/>
