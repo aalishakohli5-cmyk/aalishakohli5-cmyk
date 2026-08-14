@@ -14,18 +14,10 @@
 
 <br>
 
-```text
-╔════════════════════════════════════════════════════════════╗
-║                                                            ║
-║                  A K _ S T A R 1                           ║
-║                                                            ║
-║        STATUS        ● ONLINE                              ║
-║        MODE          BUILDING                              ║
-║        LOCATION      THE INTERNET                          ║
-║        OBJECTIVE     CREATE IMPACT                         ║
-║                                                            ║
-╚════════════════════════════════════════════════════════════╝
-```
+
+<div align="center">
+  <img src="./assets/status-panel.svg" width="100%" alt="AK_STAR1 status panel">
+</div>
 
 <div align="center">
 
