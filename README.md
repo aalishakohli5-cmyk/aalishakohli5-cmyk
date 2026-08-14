@@ -21,26 +21,16 @@
 ║       OBJECTIVE     CREATE IMPACT                          ║
 ║                                                            ║
 ╚════════════════════════════════════════════════════════════╝
-
-<br>
+```
 
 <div align="center">
 
-### 🐍 contribution_snake.exe
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/aalishakohli5-cmyk/aalishakohli5-cmyk/output/github-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/aalishakohli5-cmyk/aalishakohli5-cmyk/output/github-snake.svg"
-  />
-  <img
-    alt="Snake eating my GitHub contributions"
-    src="https://raw.githubusercontent.com/aalishakohli5-cmyk/aalishakohli5-cmyk/output/github-snake.svg"
-  />
-</picture>
+
+<img src="https://raw.githubusercontent.com/aalishakohli5-cmyk/aalishakohli5-cmyk/output/github-snake-dark.svg" alt="Snake eating my GitHub contributions">
 
 </div>
+
+
+
+
