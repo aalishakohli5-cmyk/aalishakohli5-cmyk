@@ -13,12 +13,12 @@
 ```text
 ╔════════════════════════════════════════════════════════════╗
 ║                                                            ║
-║             A K _ S T A R 1  //  TERMINAL                  ║
+║                  A K _ S T A R 1                           ║
 ║                                                            ║
-║       STATUS        ● ONLINE                               ║
-║       MODE          BUILDING                               ║
-║       LOCATION      THE INTERNET                           ║
-║       OBJECTIVE     CREATE IMPACT                          ║
+║        STATUS        ● ONLINE                              ║
+║        MODE          BUILDING                              ║
+║        LOCATION      THE INTERNET                          ║
+║        OBJECTIVE     CREATE IMPACT                         ║
 ║                                                            ║
 ╚════════════════════════════════════════════════════════════╝
 ```
