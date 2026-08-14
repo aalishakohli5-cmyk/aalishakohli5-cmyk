@@ -2,6 +2,4 @@
 
 A developer who wants to create impact! 
 
-### 🎮 Contribution Snake
 
-### 📊 Code Stats
