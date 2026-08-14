@@ -1,0 +1,186 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420">
+      <stop stop-color="#020604"/>
+      <stop offset="0.5" stop-color="#07140D"/>
+      <stop offset="1" stop-color="#020604"/>
+    </linearGradient>
+
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#163D27" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#07110C" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1200" y2="420">
+      <stop stop-color="#DFFF00"/>
+      <stop offset="0.5" stop-color="#7CFF00"/>
+      <stop offset="1" stop-color="#39FF14"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+
+  <rect x="40" y="40" width="1120" height="340" rx="24"
+        fill="url(#glass)"
+        stroke="url(#neon)"
+        stroke-width="2"
+        stroke-opacity="0.8"/>
+
+  <!-- HEADER -->
+  <rect x="395" y="22" width="410" height="58" rx="16"
+        fill="#06120C"
+        stroke="#9CFF00"
+        stroke-width="1.5"/>
+
+  <circle cx="430" cy="51" r="6" fill="#DFFF00" filter="url(#glow)"/>
+
+  <text x="600" y="61"
+        text-anchor="middle"
+        fill="#BFFF3C"
+        font-family="monospace"
+        font-size="28"
+        font-weight="800"
+        letter-spacing="2">
+    AK_STAR1.SYSTEM
+  </text>
+
+  <circle cx="770" cy="51" r="6" fill="#DFFF00" filter="url(#glow)"/>
+
+  <!-- ROW DIVIDERS -->
+  <line x1="90" y1="150" x2="1110" y2="150"
+        stroke="#7CFF00" stroke-opacity="0.16"/>
+  <line x1="90" y1="220" x2="1110" y2="220"
+        stroke="#7CFF00" stroke-opacity="0.16"/>
+  <line x1="90" y1="290" x2="1110" y2="290"
+        stroke="#7CFF00" stroke-opacity="0.16"/>
+
+  <!-- LEFT LABELS -->
+  <circle cx="120" cy="115" r="9" fill="#AFFF2A"/>
+
+  <text x="165" y="124"
+        fill="#BFFF3C"
+        font-family="monospace"
+        font-size="25">
+    STATUS
+  </text>
+
+  <text x="485" y="124"
+        fill="#7CFF00"
+        font-family="monospace"
+        font-size="25">
+    :
+  </text>
+
+  <circle cx="565" cy="115" r="10" fill="#27FF5A" filter="url(#glow)"/>
+
+  <text x="600" y="124"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="25">
+    ONLINE
+  </text>
+
+
+  <text x="110" y="194"
+        fill="#BFFF3C"
+        font-family="monospace"
+        font-size="30">
+    »
+  </text>
+
+  <text x="165" y="194"
+        fill="#BFFF3C"
+        font-family="monospace"
+        font-size="25">
+    MODE
+  </text>
+
+  <text x="485" y="194"
+        fill="#7CFF00"
+        font-family="monospace"
+        font-size="25">
+    :
+  </text>
+
+  <text x="560" y="194"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="25">
+    BUILDING
+  </text>
+
+
+  <text x="110" y="264"
+        fill="#BFFF3C"
+        font-family="monospace"
+        font-size="24">
+    ◉
+  </text>
+
+  <text x="165" y="264"
+        fill="#BFFF3C"
+        font-family="monospace"
+        font-size="25">
+    LOCATION
+  </text>
+
+  <text x="485" y="264"
+        fill="#7CFF00"
+        font-family="monospace"
+        font-size="25">
+    :
+  </text>
+
+  <text x="560" y="264"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="25">
+    THE INTERNET
+  </text>
+
+
+  <text x="110" y="334"
+        fill="#DFFF00"
+        font-family="monospace"
+        font-size="26">
+    ✦
+  </text>
+
+  <text x="165" y="334"
+        fill="#BFFF3C"
+        font-family="monospace"
+        font-size="25">
+    OBJECTIVE
+  </text>
+
+  <text x="485" y="334"
+        fill="#7CFF00"
+        font-family="monospace"
+        font-size="25">
+    :
+  </text>
+
+  <text x="560" y="334"
+        fill="#FFFFFF"
+        font-family="monospace"
+        font-size="25">
+    CREATE IMPACT
+  </text>
+
+  <!-- CORNERS -->
+  <path d="M60 90V60H95" stroke="#DFFF00" stroke-width="3"/>
+  <path d="M1105 60H1140V90" stroke="#7CFF00" stroke-width="3"/>
+  <path d="M60 330V360H95" stroke="#7CFF00" stroke-width="3"/>
+  <path d="M1105 360H1140V330" stroke="#DFFF00" stroke-width="3"/>
+
+</svg>
