@@ -1,212 +1,134 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none"
-     xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="300" viewBox="0 0 1200 300"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
-    <!-- Background -->
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#050A07"/>
-      <stop offset="0.5" stop-color="#08130D"/>
-      <stop offset="1" stop-color="#030605"/>
+
+    <!-- DARK GREEN GLASS BACKGROUND -->
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="300">
+      <stop stop-color="#020604"/>
+      <stop offset="0.5" stop-color="#07140D"/>
+      <stop offset="1" stop-color="#020604"/>
     </linearGradient>
 
-    <!-- Glass panel -->
-    <linearGradient id="glass" x1="120" y1="80" x2="1080" y2="300">
-      <stop stop-color="#123524" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#07110C" stop-opacity="0.18"/>
+    <!-- GLASS PANEL -->
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#163D27" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#0A1F14" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#07110C" stop-opacity="0.35"/>
     </linearGradient>
 
-    <!-- Neon border -->
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#DFFF00"/>
-      <stop offset="0.55" stop-color="#7CFF00"/>
+    <!-- NEON BORDER -->
+    <linearGradient id="border" x1="0" y1="0" x2="1200" y2="300">
+      <stop stop-color="#7CFF00"/>
+      <stop offset="0.5" stop-color="#DFFF00"/>
       <stop offset="1" stop-color="#39FF14"/>
     </linearGradient>
 
-    <!-- Glow -->
+    <!-- NAME GRADIENT -->
+    <linearGradient id="nameGradient" x1="420" y1="0" x2="780" y2="0">
+      <stop stop-color="#7CFF00"/>
+      <stop offset="0.5" stop-color="#DFFF00"/>
+      <stop offset="1" stop-color="#7CFF00"/>
+    </linearGradient>
+
+    <!-- NEON GLOW -->
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Grid -->
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M 36 0 L 0 0 0 36"
+    <!-- GRID -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40"
             fill="none"
             stroke="#7CFF00"
-            stroke-opacity="0.06"
-            stroke-width="1"/>
+            stroke-opacity="0.035"/>
     </pattern>
+
   </defs>
 
-  <!-- Base -->
-  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
 
-  <!-- Outer neon frame -->
-  <rect x="18" y="18" width="1164" height="324" rx="24"
-        stroke="url(#neon)"
-        stroke-width="2"
-        stroke-opacity="0.75"/>
+  <!-- BACKGROUND -->
 
-  <!-- HUD corners -->
-  <path d="M40 90V52H78" stroke="#DFFF00" stroke-width="3"/>
-  <path d="M1122 52H1160V90" stroke="#7CFF00" stroke-width="3"/>
-  <path d="M40 270V308H78" stroke="#7CFF00" stroke-width="3"/>
-  <path d="M1122 308H1160V270" stroke="#DFFF00" stroke-width="3"/>
+  <rect width="1200" height="300" rx="28" fill="url(#background)"/>
 
-  <!-- Main glass panel -->
-  <rect x="70" y="62" width="1060" height="236" rx="24"
+  <rect width="1200" height="300" rx="28" fill="url(#grid)"/>
+
+
+  <!-- GLASS PANEL -->
+
+  <rect x="35" y="35"
+        width="1130" height="230"
+        rx="25"
         fill="url(#glass)"
-        stroke="#3DFF64"
-        stroke-opacity="0.28"/>
+        stroke="url(#border)"
+        stroke-width="1.5"
+        stroke-opacity="0.65"/>
 
-  <!-- Status pill -->
-  <rect x="96" y="84" width="175" height="34" rx="17"
-        fill="#07160D"
-        stroke="#7CFF00"
-        stroke-opacity="0.55"/>
 
-  <circle cx="117" cy="101" r="6" fill="#7CFF00" filter="url(#softGlow)"/>
+  <!-- CYBER CORNERS -->
 
-  <text x="134" y="107"
-        fill="#CFFF90"
-        font-family="monospace"
-        font-size="15"
-        font-weight="700">
-    SYSTEM ONLINE
-  </text>
-
-  <!-- Version -->
-  <rect x="1010" y="84" width="88" height="34" rx="10"
-        fill="#07160D"
+  <path d="M65 90V65H105"
         stroke="#DFFF00"
-        stroke-opacity="0.45"/>
+        stroke-width="3"/>
 
-  <text x="1031" y="107"
-        fill="#DFFF00"
-        font-family="monospace"
-        font-size="14"
-        font-weight="700">
-    v1.0.0
-  </text>
+  <path d="M1095 65H1135V90"
+        stroke="#7CFF00"
+        stroke-width="3"/>
 
-  <!-- Name -->
-  <text x="100" y="188"
-        fill="#DFFF00"
+  <path d="M65 210V235H105"
+        stroke="#7CFF00"
+        stroke-width="3"/>
+
+  <path d="M1095 235H1135V210"
+        stroke="#DFFF00"
+        stroke-width="3"/>
+
+
+  <!-- SMALL DECORATIVE LINES -->
+
+  <path d="M150 150H350"
+        stroke="#7CFF00"
+        stroke-opacity="0.25"/>
+
+  <circle cx="365" cy="150" r="3"
+          fill="#DFFF00"/>
+
+  <path d="M850 150H1050"
+        stroke="#7CFF00"
+        stroke-opacity="0.25"/>
+
+  <circle cx="835" cy="150" r="3"
+          fill="#DFFF00"/>
+
+
+  <!-- NAME -->
+
+  <text x="600"
+        y="172"
+        text-anchor="middle"
+        fill="url(#nameGradient)"
         font-family="monospace"
-        font-size="64"
+        font-size="72"
         font-weight="800"
-        letter-spacing="2"
+        letter-spacing="6"
         filter="url(#glow)">
     AK_STAR1
   </text>
 
-  <!-- Subtitle -->
-  <text x="103" y="230"
-        fill="#7CFF00"
-        font-family="monospace"
-        font-size="22"
-        font-weight="700">
-    &gt; BUILDING THINGS THAT MATTER_
-  </text>
 
-  <!-- Bottom HUD labels -->
-  <rect x="100" y="252" width="220" height="34" rx="10"
-        fill="#0A1C12"
-        stroke="#7CFF00"
-        stroke-opacity="0.30"/>
+  <!-- TINY CYBER PARTICLES -->
 
-  <text x="124" y="274"
-        fill="#DFFF00"
-        font-family="monospace"
-        font-size="15"
-        font-weight="700">
-    &lt;/&gt; DEVELOPER
-  </text>
+  <circle cx="120" cy="110" r="2" fill="#7CFF00"/>
+  <circle cx="1080" cy="195" r="2" fill="#DFFF00"/>
 
-  <rect x="338" y="252" width="240" height="34" rx="10"
-        fill="#0A1C12"
-        stroke="#7CFF00"
-        stroke-opacity="0.30"/>
+  <circle cx="180" cy="225" r="1.5"
+          fill="#DFFF00" opacity="0.6"/>
 
-  <text x="361" y="274"
-        fill="#B9FF66"
-        font-family="monospace"
-        font-size="15"
-        font-weight="700">
-    ✦ PROBLEM SOLVER
-  </text>
-
-  <rect x="596" y="252" width="205" height="34" rx="10"
-        fill="#0A1C12"
-        stroke="#DFFF00"
-        stroke-opacity="0.28"/>
-
-  <text x="620" y="274"
-        fill="#DFFF00"
-        font-family="monospace"
-        font-size="15"
-        font-weight="700">
-    ⚡ BUILD MODE
-  </text>
-
-  <!-- Right-side decorative HUD -->
-  <circle cx="970" cy="185" r="66"
-          stroke="#7CFF00"
-          stroke-width="1.5"
-          stroke-opacity="0.25"/>
-
-  <circle cx="970" cy="185" r="48"
-          stroke="#DFFF00"
-          stroke-width="1.5"
-          stroke-opacity="0.35"/>
-
-  <circle cx="970" cy="185" r="8"
-          fill="#DFFF00"
-          filter="url(#softGlow)"/>
-
-  <path d="M970 111V132"
-        stroke="#7CFF00"
-        stroke-width="3"/>
-
-  <path d="M970 238V259"
-        stroke="#7CFF00"
-        stroke-width="3"/>
-
-  <path d="M896 185H917"
-        stroke="#DFFF00"
-        stroke-width="3"/>
-
-  <path d="M1023 185H1044"
-        stroke="#DFFF00"
-        stroke-width="3"/>
-
-  <!-- Decorative signal lines -->
-  <path d="M840 135H886L908 156H944"
-        stroke="#7CFF00"
-        stroke-width="2"
-        stroke-opacity="0.45"/>
-
-  <path d="M840 224H885L907 205H944"
-        stroke="#DFFF00"
-        stroke-width="2"
-        stroke-opacity="0.40"/>
-
-  <!-- Tiny particles -->
-  <circle cx="1080" cy="140" r="2.5" fill="#DFFF00"/>
-  <circle cx="1102" cy="164" r="2" fill="#7CFF00"/>
-  <circle cx="1060" cy="215" r="2.5" fill="#7CFF00"/>
-  <circle cx="1089" cy="240" r="2" fill="#DFFF00"/>
+  <circle cx="1020" cy="95" r="1.5"
+          fill="#7CFF00" opacity="0.6"/>
 
 </svg>
