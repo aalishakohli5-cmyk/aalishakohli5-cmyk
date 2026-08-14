@@ -1,4 +1,7 @@
-# PROFILE
+### 👋 Hi, I'm AK_STAR1
 
-<br>
-Author - AK
+A developer who wants to create impact! 
+
+### 🎮 Contribution Snake
+
+### 📊 Code Stats
