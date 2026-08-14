@@ -22,19 +22,3 @@
 ║                                                            ║
 ╚════════════════════════════════════════════════════════════╝
 
-const aalisha = {
-    alias: "AK_STAR1",
-    role: "Developer",
-    currentMode: "Learning + Building",
-    interests: [
-        "AI / ML",
-        "Full Stack Development",
-        "DSA",
-        "Building things that actually matter"
-    ],
-
-    mission: "Turn ideas into things people can actually use.",
-
-    status: "ONLINE ⚡"
-};
-
